@@ -1,36 +1,93 @@
-# Build output files
-/build/
-/target/
-out/
+### Gradle ###
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
 
-# IDE configuration files
+### IntelliJ IDEA / JetBrains ###
 .idea/
 *.iml
 *.ipr
 *.iws
+out/
+
+### Eclipse ###
+.project
+.classpath
+.settings/
+bin/
+
+### VS Code ###
 .vscode/
+.history/
+*.code-workspace
 
-# Gradle files
-.gradle/
-build-cache/
-
-# Maven files
-.m2/
-
-# Log files
-*.log
-logs/
-
-# Operating System files
+### macOS ###
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+### Windows ###
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Secrets and local environment configuration
-.env
-application-local.yml
-application-local.properties
+### Logs and Reports ###
+*.log
+**/logs/
+**/reports/
+**/test-results/
+**/tmp/
+**/problems-report.html
 
-# Other generated files
+### Build Artifacts ###
+**/libs/
 *.jar
 *.war
 *.ear
+
+### Coverage / Test Tools ###
+**/jacoco.exec
+**/test-output/
+**/surefire-reports/
+**/target/
+
+### Docker ###
+*.pid
+*.seed
+*.env
+docker-compose.override.yml
+
+### OS / Editor Backups ###
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+### Node (in case of frontend libs in /libs later) ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+### Python (for scripts in infrastructure) ###
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+### Custom project directories ###
+# Docs and architecture are versioned — don't ignore them
+# Ignore generated build output anywhere
+/services/**/build/
+.libs/**/build/
+.infrastructure/**/build/
