@@ -6,12 +6,14 @@ import com.xbs.flowcart.catalog.domain.valueobject.Description;
 import com.xbs.flowcart.catalog.domain.valueobject.Price;
 import com.xbs.flowcart.catalog.domain.valueobject.StockQuantity;
 import com.xbs.flowcart.catalog.infrastructure.persistence.document.ProductDocument;
+import org.springframework.stereotype.Component;
 
 import java.util.Currency;
 
+@Component
 public class ProductPersistenceMapper {
 
-    Product toDomain(ProductDocument productDocument) {
+    public Product toDomain(ProductDocument productDocument) {
         return Product.builder()
                 .id(productDocument.getId())
                 .name(productDocument.getName())
@@ -27,7 +29,7 @@ public class ProductPersistenceMapper {
                 .build();
     }
 
-    ProductDocument toDocument(Product product) {
+    public ProductDocument toDocument(Product product) {
         return ProductDocument.builder()
                 .id(product.getId())
                 .name(product.getName())
