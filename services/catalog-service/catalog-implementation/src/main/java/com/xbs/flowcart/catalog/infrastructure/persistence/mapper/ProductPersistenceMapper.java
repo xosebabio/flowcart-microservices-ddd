@@ -24,6 +24,7 @@ public class ProductPersistenceMapper {
                         Currency.getInstance(productDocument.getPrice().getCurrency()),
                         productDocument.getPrice().getAmount()
                 ))
+                .isActive(productDocument.isActive())
                 .stockQuantity(new StockQuantity(productDocument.getStockQuantity()))
                 .category(Category.valueOf(productDocument.getCategory()))
                 .build();
@@ -41,6 +42,7 @@ public class ProductPersistenceMapper {
                         .amount(product.getPrice().amount())
                         .currency(String.valueOf(product.getPrice().currency()))
                         .build())
+                .isActive(product.isActive())
                 .stockQuantity(product.getStockQuantity().amount())
                 .category(String.valueOf(product.getCategory()))
                 .build();

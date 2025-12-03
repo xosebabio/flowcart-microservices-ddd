@@ -1,4 +1,4 @@
-package com.xbs.flowcart.catalog.infrastructure.persistence.persistence;
+package com.xbs.flowcart.catalog.infrastructure.persistence.repository;
 
 import com.xbs.flowcart.catalog.infrastructure.persistence.document.ProductDocument;
 import org.springframework.data.mongodb.repository.MongoRepository;
