@@ -1,6 +1,6 @@
 package com.xbs.flowcart.catalog.infrastructure.persistence.adapter;
 
-import com.xbs.flowcart.catalog.domain.Product;
+import com.xbs.flowcart.catalog.domain.entity.Product;
 import com.xbs.flowcart.catalog.domain.repository.ProductRepository;
 import com.xbs.flowcart.catalog.infrastructure.persistence.mapper.ProductPersistenceMapper;
 import com.xbs.flowcart.catalog.infrastructure.persistence.repository.SpringDataMongoProductRepository;

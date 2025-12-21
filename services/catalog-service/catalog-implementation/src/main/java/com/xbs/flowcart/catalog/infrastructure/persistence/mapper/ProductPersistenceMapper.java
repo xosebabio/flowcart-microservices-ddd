@@ -1,10 +1,10 @@
 package com.xbs.flowcart.catalog.infrastructure.persistence.mapper;
 
-import com.xbs.flowcart.catalog.domain.Product;
-import com.xbs.flowcart.catalog.domain.valueobject.Category;
-import com.xbs.flowcart.catalog.domain.valueobject.Description;
-import com.xbs.flowcart.catalog.domain.valueobject.Price;
-import com.xbs.flowcart.catalog.domain.valueobject.StockQuantity;
+import com.xbs.flowcart.catalog.domain.entity.Product;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Category;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Description;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Price;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.StockQuantity;
 import com.xbs.flowcart.catalog.infrastructure.persistence.document.ProductDocument;
 import org.springframework.stereotype.Component;
 

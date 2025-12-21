@@ -1,6 +1,6 @@
 package com.xbs.flowcart.catalog.domain.repository;
 
-import com.xbs.flowcart.catalog.domain.Product;
+import com.xbs.flowcart.catalog.domain.entity.Product;
 
 import java.util.List;
 import java.util.Optional;
