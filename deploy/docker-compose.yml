@@ -1,0 +1,14 @@
+services:
+  catalog-service:
+    image: flowcart/catalog-service:latest
+    container_name: flowcart-catalog
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://admin:password@catalog-db:27017/flowcart_catalog?authSource=admin
+    networks:
+      - flowcart-net
+
+networks:
+  flowcart-net:
+    external: true
