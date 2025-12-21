@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   catalog-db:
     image: mongo:latest
@@ -7,17 +5,12 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=password
-      - MONGO_INITDB_DATABASE=flowcart_catalog
-    volumes:
-      - catalog_data:/data/db
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
     networks:
       - flowcart-net
 
-volumes:
-  catalog_data:
-
 networks:
   flowcart-net:
+    name: flowcart-net
     driver: bridge

@@ -1,9 +1,9 @@
-package com.xbs.flowcart.catalog.domain;
+package com.xbs.flowcart.catalog.domain.entity;
 
-import com.xbs.flowcart.catalog.domain.valueobject.Category;
-import com.xbs.flowcart.catalog.domain.valueobject.Description;
-import com.xbs.flowcart.catalog.domain.valueobject.Price;
-import com.xbs.flowcart.catalog.domain.valueobject.StockQuantity;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Category;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Description;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.Price;
+import com.xbs.flowcart.catalog.domain.entity.valueobject.StockQuantity;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

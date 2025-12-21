@@ -1,4 +1,4 @@
-package com.xbs.flowcart.catalog.domain.valueobject;
+package com.xbs.flowcart.catalog.domain.entity.valueobject;
 
 import lombok.Getter;
 
