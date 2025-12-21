@@ -91,3 +91,17 @@ __pycache__/
 /services/**/build/
 .libs/**/build/
 .infrastructure/**/build/
+
+### Maven (Required because *.jar is ignored above) ###
+# Whitelist the wrapper so it gets committed
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+# Ignore dependency directory if used locally
+.mvn/wrapper/maven-wrapper.properties
+dependency-reduced-pom.xml
+
+### Temporary/Junk files identified in Project ###
+unpacking/
+=
